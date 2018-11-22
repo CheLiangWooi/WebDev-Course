@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<form action="https://www.Wikipedia.org/">
+	<label for="fname">First Name:</label>
+	<input id="fname" type="name" placeholder="John" required>
+	<label for="lname">Last Name:</label>
+	<input id="lname" type="name" placeholder="White" required>
+	<div>
+		<label for="male"> Male </label>
+		<input id="male" type="radio" name="genderChoice">
+		<label for="female"> Female</label>	
+		<input id="female" type="radio" name="genderChoice">
+		<label for="other"> Other</label>
+		<input id="other" type="radio" name="genderChoice">
+	</div>
+
+	<div>
+		<label for="email">Email:</label>
+		<input id="email" type="email" placeholder="email" required>
+		<label for="password"> Password: </label>
+		<input type="password" placeholder="password" pattern=".{5,10}" required title="The password must be between 5 to 10 characters">
+	</div>
+
+	<div>
+		<label>
+		Birthday:
+		<select name="Month">
+			<option>Month</option>
+			<option>January</option>
+			<option>February</option>
+			<option>March</option>
+
+		</select>
+		<select name="Day">
+			<option>Day</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+		</select>
+		<select name="Year">
+			<option>Year</option>
+			<option>1999</option>
+			<option>2000</option>
+			<option>2001</option>
+		</select>
+	</label>
+		
+	</div>
+
+	<div>
+		<label for="Agreed"> I agree to the Terms and Conditions</label>
+		<input id="Agreed" type="checkbox" name="Agreed">
+	</div>
+<button>Submit</button>
+
+</form>
+</body>
+</html>
